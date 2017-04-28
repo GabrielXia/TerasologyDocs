@@ -52,7 +52,7 @@ Java
 Linux
 -----
 
-* Watch out for line-ending issues. For instance, the ``gradlew`` script might throw an error like **bash: ./gradlew: /bin/bash: bad interpreter: No such file or directory** if it somehow ends up with Windows-style line endings.
+* Watch out for line-ending issues. For instance, the ``gradlew`` script might throw an error like **bash: ./gradlew: /bin/bash^M: bad interpreter: No such file or directory** if it somehow ends up with Windows-style line endings.
 * If having issues with SSL when using ``gradlew``, run ``update-ca-certificates -f`` as root (or using ``sudo``).
 
 Arch/Gentoo random problems
