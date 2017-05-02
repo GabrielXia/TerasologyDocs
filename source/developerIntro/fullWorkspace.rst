@@ -24,9 +24,9 @@ Okay, you might want a little more than that. The only mandatory requirement is 
 
   Using OpenJDK has a slightly higher risk for encountering :ref:`Common Issues <common_issues>` - for instance the `Launcher <https://github.com/MovingBlocks/TerasologyLauncher>`_ requires JavaFX which isn't always bundled with OpenJDK.
 
-Beyond that you might want an IDE and some IDE plugins, see below. Maybe even a tool like `YourKit <https://www.yourkit.com>`_ to help profile game performance. But everything else really is optional!
+Beyond that you might want an IDE and some IDE plugins, see :ref:`Setup in IntelliJ <ide_intellij>` or :ref:`Setup in Eclipse <ide_eclipse>`. Maybe even a tool like `YourKit <https://www.yourkit.com>`_ to help profile game performance. But everything else really is optional!
 
-Most our automation and project setup happens through `Gradle <http://gradle.org>`_ which the ``gradlew`` script downloads a version of if needed. The initial `gradlew` execution will download all project dependencies (Maven style - downloading half the internet). Just give it a while. Read more on :ref:`Codebase Structure <codebase_structure>` if interested.
+Most our automation and project setup happens through `Gradle <http://gradle.org>`_ which the ``gradlew`` script downloads a version of if needed. The initial ``gradlew`` execution will download all project dependencies (Maven style - downloading half the internet). Just give it a while. Read more on :ref:`Codebase Structure <codebase_structure>` if interested.
 
 
 Run game from source
@@ -38,11 +38,13 @@ Any problem encountered at this point is usually from Java not being configured 
 
 .. note::
 
-  If the game itself behaves funny or crashes see if the `normal release download <https://github.com/MovingBlocks/Terasology/releases>`_ works. If not check the [[Minimum Requirements]] and make sure your graphics card driver is up to date.
+  If the game itself behaves funny or crashes see if the `normal release download <https://github.com/MovingBlocks/Terasology/releases>`_ works. If not check the **Minimum Requirements** [#]_ and make sure your graphics card driver is up to date.
 
   Ask in the `Support Forum <http://forum.terasology.org/forum/support.20>`_ if issues remain, or come join us on ``#terasology`` on Freenode IRC. See :ref:`Using IRC <using_irc>` and please be patient :-) IRC isn't necessarily instant communication and it may take a while to get a reply.
 
 You can also run a headless server from source using ``gradlew server`` - just run it in a second command prompt / terminal as it'll not accept further input (other than ``CTRL-C`` to break the process)
+
+.. _ide_intellij:
 
 IntelliJ
 --------
@@ -68,6 +70,10 @@ The opened project should leave you with a series of run configurations to execu
 Here is a video introducing downloading project from GitHub, runing the game from sources and openning the source with IntelliJ:
 
 .. youtube:: https://www.youtube.com/watch?v=cCMQ5VaKnfw
+
+|
+
+.. _ide_eclipse:
 
 Eclipse
 -------
@@ -102,6 +108,8 @@ Here is a video introducing setting up Terasology with Eclipse:
 
 .. youtube:: https://www.youtube.com/watch?v=WMqGx9f28uM
 
+|
+
 Git
 ---
 
@@ -112,3 +120,5 @@ Git will be enabled as source control, however going deeper into the details of 
 
   * :ref:`Module concept <concept_modules>` and :ref:`Developing modules <developing_modules>` - if the engine is the heart of Terasology modules make up everything else. Learn about them here.
   * :ref:`Contributing <contributing>` - understand how to work on the GitHub (fork code repositories on GitHub,interact with several at once, etc).
+
+.. [#] TODO: https://github.com/MovingBlocks/Terasology/issues/1123
